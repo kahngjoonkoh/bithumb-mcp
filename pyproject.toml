@@ -1,0 +1,53 @@
+[build-system]
+requires = [
+    "setuptools>=71.1",
+    "setuptools-scm>=8.1"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bithumb-mcp"
+version = "0.0.1.dev0"
+description = "MCP(Model Context Protocol) Server for interacting with the Bithumb API through natural language"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+authors = [
+    { name = "kahngjoonkoh", email = "kahngjoonk@gmail.com" }
+]
+keywords = [
+    "mcp",
+    "server",
+    "model",
+    "ai",
+    "agent",
+    "bithumb",
+    "api"
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp==1.6.0",
+    "pybithumb2==1.0.0b0",
+    "PyJWT==2.10.1",
+    "python-dotenv==1.1.0",
+    "Requests==2.32.3"
+]
+[project.urls]
+"Issues" = "https://github.com/kahngjoonkoh/bithumb-mcp/issues"
+"Documentation" = "https://github.com/kahngjoonkoh/bithumb-mcp/docs"
+"Source Code" = "https://github.com/kahngjoonkoh/bithumb-mcp"
