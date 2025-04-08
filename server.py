@@ -15,7 +15,7 @@ if not API_KEY or not API_SECRET:
     raise ValueError("Bithumb API credentials not found in environment variables.")
 
 # Initialize FastMCP server
-mcp = FastMCP("Bithumb API", dependencies=["pybithumb2", "python-dotenv"])
+mcp = FastMCP("Bithumb API", dependencies=["pybithumb2", "python-dotenv", "tabulate"])
 
 client = BithumbClient(API_KEY, API_SECRET, use_raw_data=True)
 
